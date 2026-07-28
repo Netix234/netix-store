@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Оформлення замовлення | NETIX STORE</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a href="index.html" class="logo">
+NETIX STORE
+</a>
+
+<nav>
+
+<a href="index.html">Головна</a>
+<a href="catalog.html">Каталог</a>
+<a href="cart.html">Кошик</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="checkout-page">
+
+<div class="checkout-box">
+
+<h1>Оформлення замовлення</h1>
+
+<form onsubmit="sendOrder(event)">
+
+<h3>Контактні дані</h3>
+
+<input
+type="text"
+id="fullname"
+placeholder="Ім'я та прізвище отримувача"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Номер телефону"
+required>
+
+<input
+type="text"
+id="telegram"
+placeholder="Telegram (необов'язково)">
+
+<h3>Доставка</h3>
+
+<label>
+<input type="radio" name="delivery" value="Нова Пошта" checked>
+Нова Пошта
+</label>
+
+<label>
+<input type="radio" name="delivery" value="Укрпошта">
+Укрпошта
+</label>
+
+<label>
+<input type="radio" name="delivery" value="Meest">
+Meest
+</label>
+
+<input
+type="text"
+id="city"
+placeholder="Місто"
+required>
+
+<input
+type="text"
+id="office"
+placeholder="Номер відділення або поштомату"
+required>
+
+<h3>Спосіб оплати</h3>
+
+<label>
+<input type="radio" name="payment" value="Післяплата" checked>
+Післяплата
+</label>
+
+<label>
+<input type="radio" name="payment" value="Повна передоплата">
+Повна передоплата
+</label>
+
+<h3>Коментар</h3>
+
+<textarea
+id="comment"
+placeholder="Коментар до замовлення">
+</textarea>
+
+<button
+type="submit"
+class="buy-btn">
+
+ПІДТВЕРДИТИ ЗАМОВЛЕННЯ
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 NETIX STORE</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

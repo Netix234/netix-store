@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chrome Hearts × BAPE | NETIX STORE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a href="index.html" class="logo">
+NETIX STORE
+</a>
+
+</nav>
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="mobileMenu">
+
+<a href="index.html">Головна</a>
+<a href="catalog.html">Каталог</a>
+<a href="cart.html">Кошик</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="product-page">
+
+<div class="product-left">
+
+<img src="images/chrome-black-front.jpg" class="main-image" id="mainImage">
+<div class="gallery">
+
+<img src="images/chrome-black-front.jpg"
+onclick="changeImage('images/chrome-black-front.jpg')">
+
+<img src="images/chrome-white-front.jpg"
+onclick="changeImage('images/chrome-white-front.jpg')">
+
+<img src="images/chrome-white-front (2).jpg"
+onclick="changeImage('images/chrome-white-front (2).jpg')">>
+
+<img src="images/chrome-preview.jpg"
+onclick="changeImage('images/chrome-preview.jpg')">
+
+</div>
+</div>
+
+<div class="product-right">
+
+<h1>Chrome Hearts × BAPE</h1>
+
+<h2>720 ₴</h2>
+
+<p class="stock">
+Є в наявності
+</p>
+
+<h3>Колір</h3>
+
+<div class="colors">
+
+<div class="color white active"
+
+onclick="changeImage('images/chrome-white-front.jpg')">
+
+</div>
+
+<div class="color black"
+
+onclick="changeImage('images/chrome-black-front.jpg')">
+
+</div>
+
+</div>
+
+<h3>Розмір</h3>
+
+<div class="sizes">
+
+<button disabled>S</button>
+
+<button disabled>M</button>
+
+<button class="active">L</button>
+
+<button disabled>XL</button>
+
+<button disabled>XXL</button>
+
+</div>
+
+<button class="buy-btn"
+
+onclick="addToCart(
+
+'Chrome Hearts × BAPE',
+
+720,
+
+'images/chrome-black-front.jpg'
+
+)">
+
+ДОДАТИ ДО КОШИКА
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 NETIX STORE
+
+</p>
+
+</footer>
+
+<script>
+
+function changeImage(image){
+
+document.getElementById("mainImage").src=image;
+
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
