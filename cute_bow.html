@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cute Bow | NETIX STORE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+NETIX STORE
+</a>
+
+</header>
+
+<section class="product-page">
+
+<a href="catalog.html" class="back-catalog">
+← Повернутися до каталогу
+</a>
+
+<div class="gallery">
+
+<img id="main-image" src="images/cute_bow.jpg">
+
+<div class="mini-images">
+
+<img onclick="changeImage('images/cute_bow.jpg')" src="images/cute_bow.jpg">
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h1>
+CUTE BOW
+</h1>
+
+<h2>
+Жіночий браслет
+</h2>
+
+<p class="price">
+290 грн
+</p>
+
+<div class="size">
+Універсальний розмір
+</div>
+
+<a href="checkout.html?product=Cute Bow Жіночий браслет&price=290" class="order-btn">
+Замовити
+</a>
+
+</div>
+
+</section>
+
+<script>
+
+function changeImage(image){
+
+document.getElementById("main-image").src=image;
+
+}
+
+</script>
+
+</body>
+
+</html>
