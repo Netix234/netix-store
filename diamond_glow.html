@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diamond Glow | NETIX STORE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+NETIX STORE
+</a>
+
+</header>
+
+<section class="product-page">
+
+<a href="catalog.html" class="back-catalog">
+← Повернутися до каталогу
+</a>
+
+<div class="gallery">
+
+<img id="main-image" src="images/diamond_glow_1.jpg">
+
+<div class="mini-images">
+
+<img src="images/diamond_glow_1.jpg"
+onclick="changeImage('images/diamond_glow_1.jpg')">
+
+<img src="images/diamond_glow_2.jpg"
+onclick="changeImage('images/diamond_glow_2.jpg')">
+
+<img src="images/diamond_glow_3.jpg"
+onclick="changeImage('images/diamond_glow_3.jpg')">
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h1>
+DIAMOND
+<br>
+GLOW
+</h1>
+
+<h2>
+Браслет
+</h2>
+
+<p class="price">
+300 грн
+</p>
+
+<h3>
+Розмір:
+</h3>
+
+<div class="sizes">
+
+<button class="size active" onclick="selectSize(this,'17 см')">
+17 см
+</button>
+
+<button class="size" onclick="selectSize(this,'19 см')">
+19 см
+</button>
+
+</div>
+
+<button class="order-btn" onclick="orderProduct()">
+Замовити
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+let selectedSize = "17 см";
+
+function changeImage(image){
+
+document.getElementById("main-image").src = image;
+
+}
+
+function selectSize(button,size){
+
+document.querySelectorAll(".size").forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+selectedSize = size;
+
+}
+
+function orderProduct(){
+
+window.location.href =
+`checkout.html?product=Diamond Glow Браслет (${selectedSize})&price=300`;
+
+}
+
+</script>
+
+</body>
+
+</html>
