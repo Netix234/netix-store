@@ -30,11 +30,18 @@ NETIX STORE
 
 <div class="gallery">
 
-<img id="main-image" src="images/cute_bow.jpg">
+<img id="main-image" src="images/cute_bow_1.jpg">
 
 <div class="mini-images">
 
-<img onclick="changeImage('images/cute_bow.jpg')" src="images/cute_bow.jpg">
+<img src="images/cute_bow_1.jpg"
+onclick="changeImage('images/cute_bow_1.jpg')">
+
+<img src="images/cute_bow_2.jpg"
+onclick="changeImage('images/cute_bow_2.jpg')">
+
+<img src="images/cute_bow_3.jpg"
+onclick="changeImage('images/cute_bow_3.jpg')">
 
 </div>
 
@@ -43,7 +50,9 @@ NETIX STORE
 <div class="product-info">
 
 <h1>
-CUTE BOW
+CUTE
+<br>
+BOW
 </h1>
 
 <h2>
@@ -69,9 +78,7 @@ CUTE BOW
 <script>
 
 function changeImage(image){
-
 document.getElementById("main-image").src=image;
-
 }
 
 </script>
