@@ -30,11 +30,18 @@ NETIX STORE
 
 <div class="gallery">
 
-<img id="main-image" src="images/diamond_cross.jpg">
+<img id="main-image" src="images/diamond_cross_1.jpg">
 
 <div class="mini-images">
 
-<img onclick="changeImage('images/diamond_cross.jpg')" src="images/diamond_cross.jpg">
+<img src="images/diamond_cross_1.jpg"
+onclick="changeImage('images/diamond_cross_1.jpg')">
+
+<img src="images/diamond_cross_2.jpg"
+onclick="changeImage('images/diamond_cross_2.jpg')">
+
+<img src="images/diamond_cross_3.jpg"
+onclick="changeImage('images/diamond_cross_3.jpg')">
 
 </div>
 
@@ -44,12 +51,14 @@ NETIX STORE
 
 <h1>
 DIAMOND
+<br>
 CROSS
 </h1>
 
 <h2>
 Підвіска
 </h2>
+
 <p class="price">
 250 грн
 </p>
@@ -57,8 +66,6 @@ CROSS
 <div class="size">
 Універсальний розмір
 </div>
-
-<br><br>
 
 <a href="checkout.html?product=Diamond Cross Підвіска&price=250" class="order-btn">
 Замовити
@@ -71,9 +78,7 @@ CROSS
 <script>
 
 function changeImage(image){
-
 document.getElementById("main-image").src=image;
-
 }
 
 </script>
